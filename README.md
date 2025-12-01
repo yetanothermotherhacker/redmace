@@ -1,67 +1,77 @@
-# RedMace - Cybersecurity Team Website
+# RedMace - Сайт команды по информационной безопасности
 
-Hacker-style website for a cybersecurity team with Matrix-inspired binary rain effect.
+Хакерский сайт команды по кибербезопасности с эффектом бинарного дождя в стиле киберпанк.
 
-## Features
+## Особенности
 
-- Black and green color scheme
-- Animated binary (0/1) background effect
-- Terminal-style interface
-- Responsive design
-- Smooth animations and hover effects
+- Черно-красная цветовая схема в стиле cyberpunk
+- Анимированный фон с падающими 0 и 1
+- Интерфейс в стиле терминала
+- Адаптивный дизайн
+- Плавные анимации и эффекты при наведении
+- Полная информация об услугах и команде
 
-## Deployment to GitHub Pages
+## Деплой на GitHub Pages
 
-1. Initialize git repository (if not already done):
+1. Инициализируйте git репозиторий (если еще не сделано):
 ```bash
 git init
 ```
 
-2. Add all files:
+2. Добавьте все файлы:
 ```bash
 git add .
 ```
 
-3. Commit your changes:
+3. Сделайте коммит:
 ```bash
 git commit -m "Initial commit: RedMace cybersecurity team website"
 ```
 
-4. Create a new repository on GitHub (name it whatever you want, e.g., "redmace")
+4. Создайте новый репозиторий на GitHub (назовите как хотите, например "redmace")
 
-5. Add remote and push:
+5. Добавьте remote и запушьте:
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git remote add origin https://github.com/ВАШ_USERNAME/ВАШ_РЕПОЗИТОРИЙ.git
 git branch -M main
 git push -u origin main
 ```
 
-6. Enable GitHub Pages:
-   - Go to your repository on GitHub
-   - Click on "Settings"
-   - Scroll down to "Pages" section
-   - Under "Source", select "main" branch
-   - Click "Save"
+6. Включите GitHub Pages:
+   - Перейдите в ваш репозиторий на GitHub
+   - Нажмите "Settings"
+   - Прокрутите до раздела "Pages"
+   - В "Source" выберите ветку "main"
+   - Нажмите "Save"
 
-7. Your site will be available at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+7. Ваш сайт будет доступен по адресу: `https://ВАШ_USERNAME.github.io/ВАШ_РЕПОЗИТОРИЙ/`
 
-## Customization
+## Настройка
 
-- Edit team member names and roles in `index.html`
-- Modify colors in `style.css` (search for `#00ff00` to change green color)
-- Adjust binary rain speed in `script.js` (change interval value)
-- Add your contact information in the Contact section
+- Отредактируйте имена и роли членов команды в `index.html`
+- Измените цвета в `style.css` (найдите `#ff0055` для изменения красного цвета)
+- Настройте скорость бинарного дождя в `script.js` (измените значение интервала)
+- Добавьте свои контактные данные в секцию "Контакты"
+- Измените описание услуг под ваши нужды
 
-## File Structure
+## Структура файлов
 
 ```
 .
-├── index.html    # Main HTML file
-├── style.css     # Styling and animations
-├── script.js     # Binary rain effect and interactions
-└── README.md     # This file
+├── index.html    # Главная HTML страница
+├── style.css     # Стили и анимации
+├── script.js     # Эффект бинарного дождя и интерактивность
+└── README.md     # Этот файл
 ```
 
-## License
+## Секции сайта
 
-Free to use and modify for your team.
+- **О команде** - Описание команды и опыта
+- **Специалисты** - Состав команды
+- **Клиенты** - Типы организаций, с которыми работаете
+- **Услуги** - Детальное описание всех 11 услуг по ИБ
+- **Контакты** - Способы связи
+
+## Лицензия
+
+Свободно для использования и модификации.

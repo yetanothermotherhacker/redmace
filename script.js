@@ -29,7 +29,7 @@ function draw() {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = '#00ff00';
+    ctx.fillStyle = '#ff0055';
     ctx.font = fontSize + 'px monospace';
 
     // Loop over drops
@@ -80,13 +80,13 @@ if (logo) {
         let glitchCount = 0;
         const glitchInterval = setInterval(() => {
             this.style.textShadow = `
-                ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 10px #00ff00,
-                ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 20px #00ff00
+                ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 10px #ff0055,
+                ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 20px #ff0055
             `;
             glitchCount++;
             if (glitchCount > 5) {
                 clearInterval(glitchInterval);
-                this.style.textShadow = '0 0 10px #00ff00, 0 0 20px #00ff00';
+                this.style.textShadow = '0 0 10px #ff0055, 0 0 20px #ff0055';
             }
         }, 50);
     });
