@@ -26,10 +26,10 @@ for (let x = 0; x < columns; x++) {
 // Drawing the characters
 function draw() {
     // Semi-transparent black to create fade effect
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+    ctx.fillStyle = 'rgba(10, 13, 20, 0.08)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = '#ff0055';
+    ctx.fillStyle = '#e5002b';
     ctx.font = fontSize + 'px monospace';
 
     // Loop over drops
