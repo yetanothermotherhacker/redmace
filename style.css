@@ -55,6 +55,13 @@ header {
     margin-bottom: 0;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
 .logo {
     font-family: 'JetBrains Mono', monospace;
     font-size: 2.8em;
@@ -62,6 +69,41 @@ header {
     letter-spacing: 4px;
     margin-bottom: 10px;
     color: var(--text-primary);
+}
+
+/* ── Language switcher ── */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px;
+    background: var(--bg-card);
+    flex-shrink: 0;
+}
+
+.lang-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    background: transparent;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    color: var(--text-primary);
+    background: var(--bg-elevated);
+}
+
+.lang-btn.active {
+    color: #fff;
+    background: var(--accent);
 }
 
 .bracket {
@@ -308,6 +350,64 @@ h2 {
     line-height: 1.7;
 }
 
+/* ── Cases ── */
+.case-item {
+    display: flex;
+    gap: 20px;
+    padding: 22px 24px;
+    margin: 14px 0;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    background: var(--bg-elevated);
+    transition: all 0.2s ease;
+}
+
+.case-item:hover {
+    border-color: var(--border-strong);
+    border-left-color: var(--accent-light);
+    background: #1a2035;
+    transform: translateY(-2px);
+}
+
+.case-tag {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-light);
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    min-width: 92px;
+    padding-top: 2px;
+}
+
+.case-content {
+    flex: 1;
+}
+
+.case-title {
+    color: var(--text-primary);
+    font-size: 1.02em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.case-description {
+    color: var(--text-secondary);
+    font-size: 0.88em;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.case-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.74em;
+    color: var(--text-muted);
+    letter-spacing: 0.3px;
+}
+
 /* ── Contacts ── */
 .contact-info {
     display: flex;
@@ -415,8 +515,17 @@ footer {
         padding: 36px 0 28px;
     }
 
+    .header-top {
+        align-items: center;
+    }
+
     .logo {
         font-size: 2em;
+    }
+
+    .lang-btn {
+        padding: 5px 9px;
+        font-size: 0.74em;
     }
 
     nav {
@@ -443,6 +552,15 @@ footer {
     }
 
     .service-number {
+        min-width: auto;
+    }
+
+    .case-item {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .case-tag {
         min-width: auto;
     }
 

@@ -11,40 +11,55 @@
 
         <div class="container">
             <header>
-                <div class="logo">
-                    <span class="bracket">[</span>
-                    <span class="team-name">RedMace</span>
-                    <span class="bracket">]</span>
+                <div class="header-top">
+                    <div class="logo">
+                        <span class="bracket">[</span>
+                        <span class="team-name">RedMace</span>
+                        <span class="bracket">]</span>
+                    </div>
+                    <div class="lang-switcher" id="lang-switcher">
+                        <button class="lang-btn" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="es">ES</button>
+                    </div>
                 </div>
-                <div class="tagline">// Информационная безопасность</div>
+                <div class="tagline" data-i18n="tagline">// Информационная безопасность</div>
             </header>
 
             <nav>
-                <a href="#about" class="nav-link">О команде</a>
-                <a href="#team" class="nav-link">Специалисты</a>
-                <a href="#clients" class="nav-link">Клиенты</a>
-                <a href="#services" class="nav-link">Услуги</a>
-                <a href="#contact" class="nav-link">Контакты</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">О команде</a>
+                <a href="#team" class="nav-link" data-i18n="nav.team">Специалисты</a>
+                <a href="#clients" class="nav-link" data-i18n="nav.clients">Клиенты</a>
+                <a href="#cases" class="nav-link" data-i18n="nav.cases">Кейсы</a>
+                <a href="#services" class="nav-link" data-i18n="nav.services">Услуги</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a>
             </nav>
 
             <main>
                 <section id="about" class="section">
-                    <div class="section-label">О команде</div>
+                    <div class="section-label" data-i18n="about.label">О команде</div>
                     <h2>
                         <span class="prompt">root@redmace:~$</span> cat
                         about.txt
                     </h2>
                     <div class="terminal-box">
-                        <p>
+                        <p data-i18n="about.p1">
                             RedMace - команда профессионалов, оказывающая полный
                             спектр услуг по информационной безопасности.
                         </p>
-                        <p>
-                            Все участники команды имеют опыт работы в крупных
-                            компаниях по профилю и реальные кейсы успешных
-                            пентестов.
+                        <p data-i18n="about.p2">
+                            За плечами команды множество успешно завершённых
+                            проектов в самых разных отраслях: финтех,
+                            промышленность, IT, e-commerce и других.
                         </p>
-                        <p>
+                        <p data-i18n="about.p3">
+                            Большой опыт работы с платежными решениями:
+                            процессинг, криптобиржи, обменники, Telegram-кошельки
+                            и другие финтех-продукты. Понимаем специфику
+                            финансовых потоков, антифрод-механик и требований к
+                            защите платежных данных.
+                        </p>
+                        <p data-i18n="about.p4">
                             Помогаем создавать безопасные продукты и находить
                             уязвимости.
                         </p>
@@ -52,52 +67,72 @@
                 </section>
 
                 <section id="team" class="section">
-                    <div class="section-label">Специалисты</div>
+                    <div class="section-label" data-i18n="team.label">Специалисты</div>
                     <h2>
                         <span class="prompt">root@redmace:~$</span> ls -la /team
                     </h2>
                     <div class="terminal-box">
+                        <p data-i18n="team.intro">
+                            Все специалисты уровня Senior с опытом работы в
+                            крупных компаниях по информационной безопасности.
+                            Регулярно находим и регистрируем собственные
+                            уязвимости (CVE).
+                        </p>
                         <div class="team-grid">
                             <div class="team-member">
                                 <div class="member-header">[CISO]</div>
                                 <div class="member-name">0x4349534F</div>
-                                <div class="member-role">
+                                <div class="member-role" data-i18n="role.ciso">
                                     Chief Information Security Officer
                                 </div>
                             </div>
                             <div class="team-member">
                                 <div class="member-header">[PENTEST]</div>
                                 <div class="member-name">0x50454E54</div>
-                                <div class="member-role">
-                                    Penetration Tester
+                                <div class="member-role" data-i18n="role.pentest">
+                                    Network Pentester
                                 </div>
                             </div>
                             <div class="team-member">
                                 <div class="member-header">[WEB]</div>
                                 <div class="member-name">0x57454250</div>
-                                <div class="member-role">Web Pentester</div>
+                                <div class="member-role" data-i18n="role.web">Web Pentester</div>
                             </div>
                             <div class="team-member">
                                 <div class="member-header">[MOBILE]</div>
                                 <div class="member-name">0x4D4F4249</div>
-                                <div class="member-role">Mobile Pentester</div>
+                                <div class="member-role" data-i18n="role.mobile">Mobile Pentester</div>
                             </div>
                             <div class="team-member">
                                 <div class="member-header">[APPSEC]</div>
                                 <div class="member-name">0x41505053</div>
-                                <div class="member-role">
+                                <div class="member-role" data-i18n="role.appsec">
                                     Application Security Engineer
                                 </div>
                             </div>
                             <div class="team-member">
                                 <div class="member-header">[DEV]</div>
                                 <div class="member-name">0x444556</div>
-                                <div class="member-role">Developer</div>
+                                <div class="member-role" data-i18n="role.dev">Developer</div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-header">[MALWARE]</div>
+                                <div class="member-name">0x4D414C57</div>
+                                <div class="member-role" data-i18n="role.malware">
+                                    Malware Analyst
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-header">[ADMIN]</div>
+                                <div class="member-name">0x41444D4E</div>
+                                <div class="member-role" data-i18n="role.admin">
+                                    System Administrator
+                                </div>
                             </div>
                             <div class="team-member classified">
                                 <div class="member-header">[CLASSIFIED]</div>
                                 <div class="member-name">0x????????</div>
-                                <div class="member-role">
+                                <div class="member-role" data-i18n="role.classified">
                                     and other secret members...
                                 </div>
                             </div>
@@ -106,32 +141,118 @@
                 </section>
 
                 <section id="clients" class="section">
-                    <div class="section-label">Клиенты</div>
+                    <div class="section-label" data-i18n="clients.label">Клиенты</div>
                     <h2>
                         <span class="prompt">root@redmace:~$</span> cat
                         clients.list
                     </h2>
                     <div class="terminal-box">
-                        <p>К нам обращаются:</p>
+                        <p data-i18n="clients.intro">К нам обращаются:</p>
                         <div class="clients-grid">
                             <div class="client-item">
-                                <span class="client-name">Финансовые организации</span>
+                                <span class="client-name" data-i18n="clients.finance">Финансовые организации</span>
                             </div>
                             <div class="client-item">
-                                <span class="client-name">IT-компании</span>
+                                <span class="client-name" data-i18n="clients.it">IT-компании</span>
                             </div>
                             <div class="client-item">
-                                <span class="client-name">E-commerce</span>
+                                <span class="client-name" data-i18n="clients.ecom">E-commerce</span>
                             </div>
                             <div class="client-item">
-                                <span class="client-name">Технологический бизнес</span>
+                                <span class="client-name" data-i18n="clients.tech">Технологический бизнес</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="cases" class="section">
+                    <div class="section-label" data-i18n="cases.label">Кейсы</div>
+                    <h2>
+                        <span class="prompt">root@redmace:~$</span> cat
+                        cases.log
+                    </h2>
+                    <div class="terminal-box">
+                        <p data-i18n="cases.intro">
+                            Избранные результаты проектов. Детали обезличены в
+                            соответствии с условиями NDA.
+                        </p>
+                        <div class="case-item">
+                            <div class="case-tag">[CASE-01]</div>
+                            <div class="case-content">
+                                <div class="case-title" data-i18n="case1.title">
+                                    Захват аккаунта на криптобирже
+                                </div>
+                                <div class="case-description" data-i18n="case1.desc">
+                                    В ходе аудита криптовалютной биржи выявлена
+                                    цепочка уязвимостей, позволявшая выполнить
+                                    полный захват аккаунта пользователя (ATO) и
+                                    обход механизмов двухфакторной аутентификации.
+                                    Продемонстрирован риск несанкционированного
+                                    доступа к средствам и торговым операциям.
+                                    Уязвимости закрыты до эксплуатации
+                                    злоумышленниками.
+                                </div>
+                                <div class="case-meta">
+                                    <span>// ATO</span>
+                                    <span>// 2FA bypass</span>
+                                    <span data-i18n="case1.tag">// Критический риск</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-item">
+                            <div class="case-tag">[CASE-02]</div>
+                            <div class="case-content">
+                                <div class="case-title" data-i18n="case2.title">
+                                    Проникновение во внутреннюю сеть
+                                    золотодобывающей компании
+                                </div>
+                                <div class="case-description" data-i18n="case2.desc">
+                                    Через сценарий социальной инженерии получен
+                                    первоначальный доступ во внутреннюю сеть
+                                    золотодобывающей компании. Отработан полный
+                                    путь атаки: целевой фишинг, закрепление,
+                                    lateral movement и доступ к критичным
+                                    бизнес-системам. По итогам усилены процессы
+                                    обучения персонала и сегментация сети.
+                                </div>
+                                <div class="case-meta">
+                                    <span data-i18n="case2.tag">// Social Engineering</span>
+                                    <span>// Lateral movement</span>
+                                    <span>// Red Team</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-item">
+                            <div class="case-tag">[CASE-03]</div>
+                            <div class="case-content">
+                                <div class="case-title" data-i18n="case3.title">
+                                    Захват Active Directory в лицензированном
+                                    банке РФ
+                                </div>
+                                <div class="case-description" data-i18n="case3.desc">
+                                    В рамках внутреннего пентеста банка с
+                                    лицензией ЦБ РФ достигнута полная
+                                    компрометация домена Active Directory
+                                    (Domain Admin). Выявлены пути повышения
+                                    привилегий и слабые места конфигурации
+                                    каталога. Предоставлены приоритизированные
+                                    рекомендации по устранению и повышению
+                                    устойчивости инфраструктуры.
+                                </div>
+                                <div class="case-meta">
+                                    <span>// Active Directory</span>
+                                    <span>// Privilege Escalation</span>
+                                    <span>// Domain Admin</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section id="services" class="section">
-                    <div class="section-label">Услуги</div>
+                    <div class="section-label" data-i18n="services.label">Услуги</div>
                     <h2>
                         <span class="prompt">root@redmace:~$</span>
                         ./services.sh --list
@@ -140,8 +261,8 @@
                         <div class="service-detailed">
                             <div class="service-number">[1]</div>
                             <div class="service-content">
-                                <div class="service-title">Пентест</div>
-                                <div class="service-description">
+                                <div class="service-title" data-i18n="svc1.title">Пентест</div>
+                                <div class="service-description" data-i18n="svc1.desc">
                                     Комплексное тестирование на проникновение
                                     инфраструктуры компании. Выявление
                                     уязвимостей на всех уровнях: сеть,
@@ -154,11 +275,11 @@
                         <div class="service-detailed">
                             <div class="service-number">[2]</div>
                             <div class="service-content">
-                                <div class="service-title">
+                                <div class="service-title" data-i18n="svc2.title">
                                     Аудит защищенности веб и мобильных
                                     приложений
                                 </div>
-                                <div class="service-description">
+                                <div class="service-description" data-i18n="svc2.desc">
                                     Глубокий анализ безопасности веб и мобильных
                                     приложений (iOS/Android). Проверка на OWASP
                                     Top 10, анализ бизнес-логики, тестирование
@@ -170,10 +291,10 @@
                         <div class="service-detailed">
                             <div class="service-number">[3]</div>
                             <div class="service-content">
-                                <div class="service-title">
+                                <div class="service-title" data-i18n="svc3.title">
                                     Атаки с применением социальной инженерии
                                 </div>
-                                <div class="service-description">
+                                <div class="service-description" data-i18n="svc3.desc">
                                     Фишинговые кампании, целевые рассылки,
                                     vishing, pretexting. Тестирование
                                     осведомленности сотрудников о киберугрозах.
@@ -186,12 +307,15 @@
                         <div class="service-detailed">
                             <div class="service-number">[4]</div>
                             <div class="service-content">
-                                <div class="service-title">Аудит Wi-Fi</div>
-                                <div class="service-description">
-                                    Анализ беспроводных сетей на уязвимости.
-                                    Тестирование WPA2/WPA3 Enterprise, поиск
-                                    rogue AP, анализ конфигураций точек доступа.
-                                    Evil Twin атаки и перехват трафика.
+                                <div class="service-title" data-i18n="svc4.title">Устранение последствий взлома</div>
+                                <div class="service-description" data-i18n="svc4.desc">
+                                    Реагирование на инциденты и восстановление
+                                    после компрометации. Локализация атаки,
+                                    поиск точки входа и закрепления
+                                    злоумышленника, расследование и анализ
+                                    скомпрометированных систем. Устранение
+                                    уязвимостей и выработка мер, исключающих
+                                    повторный взлом.
                                 </div>
                             </div>
                         </div>
@@ -199,8 +323,8 @@
                         <div class="service-detailed">
                             <div class="service-number">[5]</div>
                             <div class="service-content">
-                                <div class="service-title">Red Team</div>
-                                <div class="service-description">
+                                <div class="service-title" data-i18n="svc5.title">Red Team</div>
+                                <div class="service-description" data-i18n="svc5.desc">
                                     Моделирование реальных атак APT-группировок.
                                     Многоэтапные целевые атаки на
                                     инфраструктуру. Обход систем защиты, lateral
@@ -214,10 +338,10 @@
                         <div class="service-detailed">
                             <div class="service-number">[6]</div>
                             <div class="service-content">
-                                <div class="service-title">
+                                <div class="service-title" data-i18n="svc6.title">
                                     Пентест внутренней сети компании
                                 </div>
-                                <div class="service-description">
+                                <div class="service-description" data-i18n="svc6.desc">
                                     Тестирование безопасности внутренней
                                     корпоративной сети. Анализ сегментации,
                                     Active Directory, внутренних сервисов. Поиск
@@ -230,10 +354,10 @@
                         <div class="service-detailed">
                             <div class="service-number">[7]</div>
                             <div class="service-content">
-                                <div class="service-title">
+                                <div class="service-title" data-i18n="svc7.title">
                                     Аудит исходного кода
                                 </div>
-                                <div class="service-description">
+                                <div class="service-description" data-i18n="svc7.desc">
                                     Ручной и автоматизированный анализ исходного
                                     кода (SAST). Поиск уязвимостей на этапе
                                     разработки. Поддержка любых языков
@@ -246,11 +370,11 @@
                         <div class="service-detailed">
                             <div class="service-number">[8]</div>
                             <div class="service-content">
-                                <div class="service-title">
+                                <div class="service-title" data-i18n="svc8.title">
                                     Экспертиза по информационной безопасности
                                     для разработчиков
                                 </div>
-                                <div class="service-description">
+                                <div class="service-description" data-i18n="svc8.desc">
                                     Консультации по безопасной разработке. Code
                                     review с фокусом на security. Обучение
                                     разработчиков принципам Secure Development
@@ -262,8 +386,8 @@
                         <div class="service-detailed">
                             <div class="service-number">[9]</div>
                             <div class="service-content">
-                                <div class="service-title">Bug Bounty</div>
-                                <div class="service-description">
+                                <div class="service-title" data-i18n="svc9.title">Bug Bounty</div>
+                                <div class="service-description" data-i18n="svc9.desc">
                                     Организация и проведение Bug Bounty
                                     программ. Привлечение сообщества
                                     исследователей для поиска уязвимостей.
@@ -276,10 +400,10 @@
                         <div class="service-detailed">
                             <div class="service-number">[10]</div>
                             <div class="service-content">
-                                <div class="service-title">
+                                <div class="service-title" data-i18n="svc10.title">
                                     DoS тестирование
                                 </div>
-                                <div class="service-description">
+                                <div class="service-description" data-i18n="svc10.desc">
                                     Стресс-тестирование систем на устойчивость к
                                     DoS/DDoS атакам. Проверка rate limiting,
                                     защиты от флуда. Тестирование CDN и WAF
@@ -292,7 +416,7 @@
                 </section>
 
                 <section id="contact" class="section">
-                    <div class="section-label">Контакты</div>
+                    <div class="section-label" data-i18n="contact.label">Контакты</div>
                     <h2>
                         <span class="prompt">root@redmace:~$</span> cat
                         contact.info
@@ -311,7 +435,7 @@
                                 >
                             </div>
                             <div class="contact-line">
-                                <span class="contact-label">Статус:</span>
+                                <span class="contact-label" data-i18n="contact.status">Статус:</span>
                                 <span class="contact-value blink">ONLINE</span>
                             </div>
                         </div>
@@ -321,8 +445,8 @@
 
             <footer>
                 <div class="footer-content">
-                    <p>&copy; 2026 RedMace Team | Все права защищены</p>
-                    <p class="footer-note">
+                    <p data-i18n="footer.copy">&copy; 2026 RedMace Team | Все права защищены</p>
+                    <p class="footer-note" data-i18n="footer.note">
                         // Несанкционированный доступ запрещен и отслеживается
                     </p>
                 </div>
